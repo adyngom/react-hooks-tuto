@@ -7,7 +7,10 @@ const DB = JSON.parse(json);
 const lookup = DB.reduce((acc, curr) => {
     const key = curr.id;
     acc.order.push(key);
-    acc[key] = curr;
+    const { id, title , tagline, poster_path, overview } = curr;
+    acc[key] = {
+        id, title, tagline, poster_path, overview
+    };
     return acc;
 }, { order: [] });
 
