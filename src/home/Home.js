@@ -3,7 +3,7 @@ import logo from './logo.svg';
 
 export const Home = () => {
     return (
-        <>
+        <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
@@ -18,6 +18,6 @@ export const Home = () => {
                 Learn React
                 </a>
             </header>
-        </>
+        </div>
     )
 }
